@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>maindex images</title>
+<style>
+  body{margin:0;padding:24px 16px;background:#202228;color:rgba(255,255,255,.87);font:15px/1.6 Roboto,Helvetica,Arial,"Hiragino Sans",sans-serif}
+  h1{font-size:20px;margin:0 0 4px} p{color:rgba(255,255,255,.55);margin:0 0 20px;font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+  figure{margin:0;background:#373b44;border-radius:8px;padding:12px;box-shadow:0 2px 0 #000}
+  img{display:block;max-width:100%;max-height:200px;margin:0 auto 8px;background:#fff;border-radius:4px}
+  figcaption b{display:block;font-size:13px;word-break:break-all}
+  code{display:block;margin-top:6px;padding:6px 8px;border-radius:4px;background:rgba(0,0,0,.25);color:#5de3ec;font-size:12px;word-break:break-all;cursor:pointer}
+  code.copied{color:#fff;background:#308ee6}
+</style></head><body>
+<h1>maindex images</h1>
+<p>2 枚 ／ 記法をクリックするとコピーします ／ 追加は <code style="display:inline;padding:1px 6px">scripts/add.sh &lt;ファイル&gt; [名前]</code></p>
+<div class="grid">
+<figure><a href="images/gyazo-5f93e65a3b979ae5333aca4f32600611.png" target="_blank" rel="noopener"><img src="images/gyazo-5f93e65a3b979ae5333aca4f32600611.png" alt="gyazo-5f93e65a3b979ae5333aca4f32600611.png" loading="lazy"></a><figcaption><b>gyazo-5f93e65a3b979ae5333aca4f32600611.png</b><code title="クリックでコピー" data-copy="[https://maindex-images.pages.dev/images/gyazo-5f93e65a3b979ae5333aca4f32600611.png]">[https://maindex-images.pages.dev/images/gyazo-5f93e65a3b979ae5333aca4f32600611.png]</code></figcaption></figure>
+<figure><a href="images/gyazo-c3a68ab8928396608ef24349051c9d71.png" target="_blank" rel="noopener"><img src="images/gyazo-c3a68ab8928396608ef24349051c9d71.png" alt="gyazo-c3a68ab8928396608ef24349051c9d71.png" loading="lazy"></a><figcaption><b>gyazo-c3a68ab8928396608ef24349051c9d71.png</b><code title="クリックでコピー" data-copy="[https://maindex-images.pages.dev/images/gyazo-c3a68ab8928396608ef24349051c9d71.png]">[https://maindex-images.pages.dev/images/gyazo-c3a68ab8928396608ef24349051c9d71.png]</code></figcaption></figure>
+</div>
+<script>
+document.querySelectorAll('code[data-copy]').forEach(c=>c.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(c.dataset.copy);c.classList.add('copied');setTimeout(()=>c.classList.remove('copied'),900)}catch(e){}
+}));
+</script>
+</body></html>
