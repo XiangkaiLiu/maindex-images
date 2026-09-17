@@ -55,3 +55,16 @@ scripts/fetch_gyazo.sh <GyazoのIDまたはURL> [公開名]
 - Workers & Pages → Pages プロジェクト `maindex-images` — Git 連携（このリポジトリの `main`）
 - Build command: なし ／ Build output directory: `/`（リポジトリ直下をそのまま配信）
 - 独自ドメインを付ける場合は Pages プロジェクトの Custom domains から（例: `img.maindex.ccwu.cc`）
+
+## 移行記録（2026-09-17）
+
+Gyazo の画像配信（`i.gyazo.com`）障害を機に、Scrapbox 内の Gyazo 参照をすべてここへ移した。
+
+| Scrapbox 側 | 旧 | 新 |
+|---|---|---|
+| `maindex` ページ 2 行目（プロジェクトアイコン） | `gyazo.com/28c40135…` | `images/maindex-icon.png`（GitHub アバターと同一画像・256px） |
+| `Settings` `.brand-icon { --logo-url }` と `cv:p1p2` 行の `--cv-logo-url` | `i.gyazo.com/28c40135….png` | 同上 |
+| `Scrapboxの使い方` の画像 2 枚 | `gyazo.com/5f93e65a…`, `gyazo.com/c3a68ab8…` | `images/gyazo-5f93e65a….png`, `images/gyazo-c3a68ab8….png`（Internet Archive から復元） |
+
+- `Settings` の `cv:p1p2` 行は別 PC の `scrapbox-maindex` リポジトリから生成しているので、**そちらのソースでも `--cv-logo-url` を新 URL に直す**こと（直さないと再生成時に Gyazo へ戻る）。
+- 独自ドメイン（例: `img.maindex.ccwu.cc`）は未設定。付けるなら Pages プロジェクト → Custom domains から。Scrapbox 側の参照は Cloudflare 直轄の `pages.dev` のままでよい。
