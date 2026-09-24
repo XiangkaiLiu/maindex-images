@@ -66,5 +66,5 @@ Gyazo の画像配信（`i.gyazo.com`）障害を機に、Scrapbox 内の Gyazo 
 | `Settings` `.brand-icon { --logo-url }` と `cv:p1p2` 行の `--cv-logo-url` | `i.gyazo.com/28c40135….png` | 同上 |
 | `Scrapboxの使い方` の画像 2 枚 | `gyazo.com/5f93e65a…`, `gyazo.com/c3a68ab8…` | `images/gyazo-5f93e65a….png`, `images/gyazo-c3a68ab8….png`（Internet Archive から復元） |
 
-- `Settings` の `cv:p1p2` 行は別 PC の `scrapbox-maindex` リポジトリから生成しているので、**そちらのソースでも `--cv-logo-url` を新 URL に直す**こと（直さないと再生成時に Gyazo へ戻る）。
+- `Settings` の `cv:*` 行のソースは Settings にしか無い（行内の注記「source: scrapbox-maindex repo / src」は古い。2026-09-24 確認）。`--cv-logo-url` は新 URL へ移行済み。
 - 独自ドメイン（例: `img.maindex.ccwu.cc`）は未設定。付けるなら Pages プロジェクト → Custom domains から。Scrapbox 側の参照は Cloudflare 直轄の `pages.dev` のままでよい。

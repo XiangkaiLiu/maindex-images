@@ -9,7 +9,7 @@
 
 Scrapbox（Cosense）`maindex` プロジェクトの画像置き場。**GitHub が正本、Cloudflare Pages が配信**
 （`main` への push で自動デプロイ）。Scrapbox の画像配信はここに一本化してある（2026-09-24）。
-兄弟リポジトリ `scrapbox-maindex` は配信しない。
+兄弟リポジトリ `scrapbox-maindex`（private）は Scrapbox の知識のミラーで、配信はしない。
 
 ## 対象範囲
 
