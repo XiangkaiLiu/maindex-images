@@ -19,6 +19,7 @@ Scrapbox（Cosense）`maindex` プロジェクトの画像置き場。**GitHub �
 - **`scripts/add.sh` と `scripts/fetch_gyazo.sh` は commit と push まで行う。**
   push ＝ 公開なので、ユーザーの明示指示なしに走らせない。
 - **`index.html` は生成物。** 手で書かない。`scripts/build_index.py` で作り直す。
+- **`404.html` を消さない。** 無いと存在しない画像が壊れた画像として 1 日残る（理由と実例は README「構成」）。
 - **配信 URL の正本は `scripts/config.sh`。** URL を他のファイルへ直書きしない。
 - **公開済みの画像を同じ名前で上書きしない**（`--force`）。Scrapbox のページは URL で参照しており、
   キャッシュ期間（正本は `_headers`）のあいだは閲覧者の手元に古い画像が残る。上書きが必要なら問う。
