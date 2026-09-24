@@ -44,6 +44,7 @@ scripts/fetch_gyazo.sh <GyazoのIDまたはURL> [公開名]
 |---|---|
 | `images/` | 公開する画像本体 |
 | `index.html` | 一覧ページ（生成物） |
+| `404.html` | 存在しないパスに 404 を返させる。**消さない** —— 無いと Pages は `index.html` を 200 で返し、`/images/*` ではそれが画像として 1 日キャッシュされて壊れた画像が残る（2026-09-24 に W-001.png で実際に起きた） |
 | `_headers` | Cloudflare Pages のキャッシュ・CORS ヘッダ |
 | `scripts/config.sh` | 配信 URL の正本（ドメインを変えたらここだけ直す） |
 | `scripts/add.sh` | 追加 → commit → push → 記法表示 |
